@@ -53,6 +53,10 @@ abstract class AbstractAdapter extends Object
      */
     public $returnRoute;
     /**
+     * @var string
+     */
+    public $cancelRoute;
+    /**
      * @var bool
      */
     public $enabled = true;
@@ -162,6 +166,18 @@ abstract class AbstractAdapter extends Object
      */
     public function getReturnUrl()
     {
+        return $this->paymentHandler->createAbsoluteUrl($this->returnRoute);
+    }
+
+    /**
+     * Getter for service URL
+     * @return string
+     */
+    public function getCancelUrl()
+    {
+        if (null === $this->cancelRoute) {
+            $this->cancelRoute = $this->returnRoute;
+        }
         return $this->paymentHandler->createAbsoluteUrl($this->returnRoute);
     }
 
