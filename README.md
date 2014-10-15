@@ -84,3 +84,5 @@ if ($response->isSuccessful()) {
 	echo $transaction->getTransactionId();
 }
 ```
+
+Added `cancelRoute` and `getCancelUrl()` to AdapterAbstract to allow different redirecting after cancelling a payment
