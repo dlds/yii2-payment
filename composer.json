@@ -1,19 +1,19 @@
 {
-	"name": "opus-online/yii2-payment",
-	"type": "yii2-extension",
-	"description": "Library to handle payments with Estonian banks",
-	"minimum-stability": "dev",
-	"license": "proprietary",
-	"authors": [
-		{
-			"name": "Ivo Kund",
-			"email": "ivo@opus.ee"
-		}
-	],
-	"require": {
-		"yiisoft/yii2": "dev-master@dev"
-	},
-	"autoload": {
-		"psr-4": { "opus\\payment\\": "lib/" }
-	}
+  "name": "opus-online/yii2-payment",
+  "type": "yii2-extension",
+  "description": "Library to handle payments with Estonian banks",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ivo Kund",
+      "email": "ivo@opus.ee"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "autoload": {
+    "psr-4": {"opus\\payment\\": "lib/"}
+  }
 }
