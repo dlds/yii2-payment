@@ -91,7 +91,7 @@ class AbstractIPizza extends AbstractAdapter implements AdapterInterface
             ->setParam('VK_ACC', $this->getConfParam('VK_ACC'))
             ->setParam('VK_NAME', $this->getConfParam('VK_NAME'))
             ->setParam('VK_RETURN', $this->getReturnUrl())
-            ->setParam('VK_CANCEL', $this->getReturnUrl());
+            ->setParam('VK_CANCEL', $this->getCancelUrl());
     }
 
     /**
