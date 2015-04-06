@@ -7,19 +7,19 @@
  * @date 19.04.2012
  * @author Ivo Kund <ivo@opus.ee>
  */
-namespace opus\payment\services;
+namespace dlds\payment\services;
 
-use opus\payment\Exception;
-use opus\payment\PaymentHandlerBase;
-use opus\payment\services\payment\Form;
-use opus\payment\services\payment\Response;
-use opus\payment\services\payment\Transaction;
+use dlds\payment\Exception;
+use dlds\payment\PaymentHandlerBase;
+use dlds\payment\services\payment\Form;
+use dlds\payment\services\payment\Response;
+use dlds\payment\services\payment\Transaction;
 
 /**
  * Class Payment
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\services
+ * @package dlds\payment\services
  */
 class Payment extends ServicesAbstract
 {
@@ -60,7 +60,7 @@ class Payment extends ServicesAbstract
      *
      * @param array $request Data from $_REQUEST
      * @return Response
-     * @throws \opus\payment\Exception
+     * @throws \dlds\payment\Exception
      */
     public function handleResponse(array $request)
     {

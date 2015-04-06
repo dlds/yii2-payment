@@ -6,13 +6,13 @@
  * @date 19.04.2012
  * @author Ivo Kund <ivo@opus.ee>
  */
-namespace opus\payment\services\payment;
+namespace dlds\payment\services\payment;
 
 /**
  * Class Form
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\services\payment
+ * @package dlds\payment\services\payment
  */
 class Form extends Dataset
 {

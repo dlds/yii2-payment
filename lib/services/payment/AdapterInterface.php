@@ -6,12 +6,12 @@
  * @date 18.04.2012
  * @author Ivo Kund <ivo@opus.ee>
  */
-namespace opus\payment\services\payment;
+namespace dlds\payment\services\payment;
 
 /**
  * Interface AdapterInterface
  *
- * @package opus\payment\services\payment
+ * @package dlds\payment\services\payment
  */
 interface AdapterInterface
 {

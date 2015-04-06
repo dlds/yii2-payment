@@ -7,20 +7,20 @@
  * @date 18.04.2012
  * @author Ivo Kund <ivo@opus.ee>
  */
-namespace opus\payment\adapters;
+namespace dlds\payment\adapters;
 
-use opus\payment\PaymentHandlerBase;
-use opus\payment\services\payment\AdapterInterface;
-use opus\payment\services\payment\Dataset;
-use opus\payment\services\payment\Response;
-use opus\payment\services\payment\Transaction;
+use dlds\payment\PaymentHandlerBase;
+use dlds\payment\services\payment\AdapterInterface;
+use dlds\payment\services\payment\Dataset;
+use dlds\payment\services\payment\Response;
+use dlds\payment\services\payment\Transaction;
 use yii\helpers\ArrayHelper;
 
 /**
  * Class Estcard
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\adapters
+ * @package dlds\payment\adapters
  */
 class Estcard extends AbstractAdapter implements AdapterInterface
 {
@@ -97,7 +97,7 @@ class Estcard extends AbstractAdapter implements AdapterInterface
      * Generates a MAC key that corresponds to the parameter set specified by
      * the first parameter and adds it to the dataset (parameter 'mac')
      *
-     * @param \opus\payment\services\payment\Dataset $dataset
+     * @param \dlds\payment\services\payment\Dataset $dataset
      * @return string
      */
     private function addMacSignature(Dataset $dataset)
@@ -118,7 +118,7 @@ class Estcard extends AbstractAdapter implements AdapterInterface
     /**
      * Calculates MAC source for Estcard adapter (basic implode)
      *
-     * @param \opus\payment\services\payment\Dataset $dataset
+     * @param \dlds\payment\services\payment\Dataset $dataset
      * @param string $requestType
      * @return string
      */

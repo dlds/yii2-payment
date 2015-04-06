@@ -1,12 +1,12 @@
 <?php
-use opus\payment\helpers\InstallHelper;
+use dlds\payment\helpers\InstallHelper;
 
 /**
  *
  * @author Ivo Kund <ivo@opus.ee>
  * @date 21.01.14
  */
-class PaymentHandler extends \opus\payment\PaymentHandlerBase
+class PaymentHandler extends \dlds\payment\PaymentHandlerBase
 {
     public function init()
     {

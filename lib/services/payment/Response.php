@@ -7,13 +7,13 @@
  * @author Ivo Kund <ivo@opus.ee>
  */
 
-namespace opus\payment\services\payment;
+namespace dlds\payment\services\payment;
 
 /**
  * Class Response
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\services\payment
+ * @package dlds\payment\services\payment
  */
 class Response extends Dataset
 {

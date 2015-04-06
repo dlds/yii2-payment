@@ -8,17 +8,17 @@
  * @date 17.04.2012
  * @author Ivo Kund <ivo@opus.ee>
  */
-namespace opus\payment\adapters;
+namespace dlds\payment\adapters;
 
-use opus\payment\services\payment\Dataset;
-use opus\payment\services\payment\Response;
+use dlds\payment\services\payment\Dataset;
+use dlds\payment\services\payment\Response;
 use yii\helpers\ArrayHelper;
 
 /**
  * Class Swedbank
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\adapters
+ * @package dlds\payment\adapters
  */
 class Swedbank extends AbstractIPizza
 {

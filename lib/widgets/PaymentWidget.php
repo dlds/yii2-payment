@@ -5,9 +5,9 @@
  * @date 22.01.14
  */
 
-namespace opus\payment\widgets;
+namespace dlds\payment\widgets;
 
-use opus\payment\services\payment\Form;
+use dlds\payment\services\payment\Form;
 use yii\base\InvalidConfigException;
 use yii\base\Widget;
 use Yii;
@@ -17,7 +17,7 @@ use yii\helpers\Html;
  * Widget for rendering payment buttons. Extend this form and override any methods you need
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\widgets
+ * @package dlds\payment\widgets
  */
 class PaymentWidget extends Widget
 {
@@ -106,7 +106,7 @@ class PaymentWidget extends Widget
     }
 
     /**
-     * @param \opus\payment\services\payment\Form $form
+     * @param \dlds\payment\services\payment\Form $form
      * @return string
      */
     protected function generateForm(Form $form)

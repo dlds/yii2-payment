@@ -6,19 +6,19 @@
  * @date 18.04.2012
  * @author Ivo Kund <ivo@opus.ee>
  */
-namespace opus\payment\adapters;
+namespace dlds\payment\adapters;
 
-use opus\payment\Exception;
-use opus\payment\helpers\StringHelper;
-use opus\payment\PaymentHandlerBase;
-use opus\payment\services\payment\Dataset;
+use dlds\payment\Exception;
+use dlds\payment\helpers\StringHelper;
+use dlds\payment\PaymentHandlerBase;
+use dlds\payment\services\payment\Dataset;
 use yii\base\Object;
 
 /**
  * Class AdaptersAbstract
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\adapters
+ * @package dlds\payment\adapters
  */
 abstract class AbstractAdapter extends Object
 {
@@ -129,7 +129,7 @@ abstract class AbstractAdapter extends Object
      * @param $param
      * @param mixed $default
      * @return string
-     * @throws \opus\payment\Exception
+     * @throws \dlds\payment\Exception
      */
     public function getConfParam($param, $default = null)
     {
@@ -261,7 +261,7 @@ abstract class AbstractAdapter extends Object
      * @param Dataset $dataset
      * @param string $service What service parameters to return (array key)
      * @return array
-     * @throws \opus\payment\Exception
+     * @throws \dlds\payment\Exception
      */
     public function getNormalizedMacParams(Dataset $dataset, $service)
     {
@@ -309,7 +309,7 @@ abstract class AbstractAdapter extends Object
      * @param string $keyPath
      * @param string $source
      * @return string
-     * @throws \opus\payment\Exception
+     * @throws \dlds\payment\Exception
      */
     protected function signWithPrivateKey($keyPath, $source)
     {
@@ -340,7 +340,7 @@ abstract class AbstractAdapter extends Object
      * @param string $data
      * @param string $signature
      * @return int
-     * @throws \opus\payment\Exception
+     * @throws \dlds\payment\Exception
      */
     protected function verifySignatureWithCertificate($certPath, $data, $signature)
     {

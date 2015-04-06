@@ -1,5 +1,5 @@
 {
-  "name": "opus-online/yii2-payment",
+  "name": "dlds/yii2-payment",
   "type": "yii2-extension",
   "description": "Library to handle payments with Estonian banks",
   "minimum-stability": "dev",
@@ -14,6 +14,6 @@
     "yiisoft/yii2": "*"
   },
   "autoload": {
-    "psr-4": {"opus\\payment\\": "lib/"}
+    "psr-4": {"dlds\\payment\\": "lib/"}
   }
 }

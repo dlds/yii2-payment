@@ -11,7 +11,7 @@ $transaction->setReference();
 
 echo '<h1>Transaction</h1>' . $transaction . '<h1>Submit forms</h1>';
 
-echo \opus\payment\widgets\PaymentWidget::widget([
+echo \dlds\payment\widgets\PaymentWidget::widget([
     'forms' => $service->generateForms($transaction),
     'debug' => true,
 ]);

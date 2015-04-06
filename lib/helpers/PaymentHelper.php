@@ -5,13 +5,13 @@
  * @date 21.01.14
  */
 
-namespace opus\payment\helpers;
+namespace dlds\payment\helpers;
 
 /**
  * Class StringHelper
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\helpers
+ * @package dlds\payment\helpers
  */
 class PaymentHelper
 {

@@ -6,21 +6,21 @@
  * @date 17.04.2012
  * @author Ivo Kund <ivo@opus.ee>
  */
-namespace opus\payment\adapters;
+namespace dlds\payment\adapters;
 
-use opus\payment\Exception;
-use opus\payment\PaymentHandlerBase;
-use opus\payment\services\payment\AdapterInterface;
-use opus\payment\services\payment\Dataset;
-use opus\payment\services\payment\Response;
-use opus\payment\services\payment\Transaction;
+use dlds\payment\Exception;
+use dlds\payment\PaymentHandlerBase;
+use dlds\payment\services\payment\AdapterInterface;
+use dlds\payment\services\payment\Dataset;
+use dlds\payment\services\payment\Response;
+use dlds\payment\services\payment\Transaction;
 use yii\helpers\ArrayHelper;
 
 /**
  * Class AbstractIPizza
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\adapters
+ * @package dlds\payment\adapters
  */
 class AbstractIPizza extends AbstractAdapter implements AdapterInterface
 {
@@ -113,7 +113,7 @@ class AbstractIPizza extends AbstractAdapter implements AdapterInterface
     /**
      * Generates and adds a MAC signature to the dataset (also adds VK_MAC parameter)
      *
-     * @param \opus\payment\services\payment\Dataset $dataset
+     * @param \dlds\payment\services\payment\Dataset $dataset
      * @return bool|string
      */
     private function addMacSignature(Dataset $dataset)

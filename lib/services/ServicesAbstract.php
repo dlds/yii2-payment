@@ -7,18 +7,18 @@
  * @date 19.04.2012
  * @author Ivo Kund <ivo@opus.ee>
  */
-namespace opus\payment\services;
+namespace dlds\payment\services;
 
-use opus\payment\adapters\AbstractAdapter;
-use opus\payment\Exception;
-use opus\payment\PaymentHandlerBase;
-use opus\payment\services\payment\AdapterInterface;
+use dlds\payment\adapters\AbstractAdapter;
+use dlds\payment\Exception;
+use dlds\payment\PaymentHandlerBase;
+use dlds\payment\services\payment\AdapterInterface;
 
 /**
  * Class ServicesAbstract
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\services
+ * @package dlds\payment\services
  */
 abstract class ServicesAbstract
 {
@@ -31,7 +31,7 @@ abstract class ServicesAbstract
      * Create a new service
      *
      * @param PaymentHandlerBase $paymentHandler Reference to the payment handler
-     * @throws \opus\payment\Exception
+     * @throws \dlds\payment\Exception
      */
     function __construct(PaymentHandlerBase $paymentHandler)
     {

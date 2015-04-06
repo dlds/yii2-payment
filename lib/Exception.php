@@ -7,13 +7,13 @@
  * @author Ivo Kund <ivo@opus.ee>
  */
 
-namespace opus\payment;
+namespace dlds\payment;
 
 /**
  * Class Exception
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment
+ * @package dlds\payment
  */
 class Exception extends \Exception
 {

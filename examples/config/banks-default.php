@@ -2,7 +2,7 @@
 
 return [
     'SWEDBANK' => [
-        'class' => '\opus\payment\adapters\Swedbank',
+        'class' => '\dlds\payment\adapters\Swedbank',
         'serviceUrl' => 'https://pangalink.net/banklink/swedbank',
         'pkcKeyPath' => 'Swed/private_key.pem',
         'pkcCertPath' => 'Swed/cert.pem',
@@ -13,7 +13,7 @@ return [
         ],
     ],
     'SEB' => [
-        'class' => '\opus\payment\adapters\Seb',
+        'class' => '\dlds\payment\adapters\Seb',
         'serviceUrl' => 'https://pangalink.net/banklink/seb',
         'pkcKeyPath' => 'SEB/private_key.pem',
         'pkcCertPath' => 'SEB/cert.pem',
@@ -24,7 +24,7 @@ return [
         ],
     ],
     'DANSKE' => [
-        'class' => '\opus\payment\adapters\Danske',
+        'class' => '\dlds\payment\adapters\Danske',
         'serviceUrl' => 'https://pangalink.net/banklink/sampo',
         'pkcKeyPath' => 'Danske/private_key.pem',
         'pkcCertPath' => 'Danske/cert.pem',
@@ -35,7 +35,7 @@ return [
         ],
     ],
     'LHV' => [
-        'class' => '\opus\payment\adapters\Lhv',
+        'class' => '\dlds\payment\adapters\Lhv',
         'serviceUrl' => 'https://pangalink.net/banklink/lhv',
         'pkcKeyPath' => 'LHV/private_key.pem',
         'pkcCertPath' => 'LHV/cert.pem',
@@ -46,7 +46,7 @@ return [
         ],
     ],
     'KREDIIDIPANK' => [
-        'class' => '\opus\payment\adapters\Krediidipank',
+        'class' => '\dlds\payment\adapters\Krediidipank',
         'serviceUrl' => 'https://pangalink.net/banklink/krediidipank',
         'pkcKeyPath' => 'Krediidipank/private_key.pem',
         'pkcCertPath' => 'Krediidipank/cert.pem',
@@ -58,7 +58,7 @@ return [
     ],
 
     'NORDEA' => [
-        'class' => '\opus\payment\adapters\Nordea',
+        'class' => '\dlds\payment\adapters\Nordea',
         'serviceUrl' => 'https://pangalink.net/banklink/nordea',
         'params' => [
             'SOLOPMT_RCV_ID' => '',
@@ -68,7 +68,7 @@ return [
     ],
 
     'ESTCARD' => [
-        'class' => '\opus\payment\adapters\Estcard',
+        'class' => '\dlds\payment\adapters\Estcard',
         'serviceUrl' => 'https://pangalink.net/banklink/ec',
         'pkcKeyPath' => 'ECOM/private_key.pem',
         'pkcCertPath' => 'ECOM/cert.pem',

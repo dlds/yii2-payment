@@ -8,21 +8,21 @@
  * @date 18.04.2012
  * @author Ivo Kund <ivo@opus.ee>
  */
-namespace opus\payment\adapters;
+namespace dlds\payment\adapters;
 
-use opus\payment\Exception;
-use opus\payment\PaymentHandlerBase;
-use opus\payment\services\payment\AdapterInterface;
-use opus\payment\services\payment\Dataset;
-use opus\payment\services\payment\Response;
-use opus\payment\services\payment\Transaction;
+use dlds\payment\Exception;
+use dlds\payment\PaymentHandlerBase;
+use dlds\payment\services\payment\AdapterInterface;
+use dlds\payment\services\payment\Dataset;
+use dlds\payment\services\payment\Response;
+use dlds\payment\services\payment\Transaction;
 use yii\helpers\ArrayHelper;
 
 /**
  * Class Nordea
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\adapters
+ * @package dlds\payment\adapters
  */
 class Nordea extends AbstractAdapter implements AdapterInterface
 {
@@ -227,7 +227,7 @@ class Nordea extends AbstractAdapter implements AdapterInterface
      * Verifies if a given MAC in a response object is valid
      *
      * @param Response $response
-     * @throws \opus\payment\Exception
+     * @throws \dlds\payment\Exception
      */
     public function verifyResponseMac(Response $response)
     {

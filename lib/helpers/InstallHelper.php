@@ -5,7 +5,7 @@
  * @date 28.01.14
  */
 
-namespace opus\payment\helpers;
+namespace dlds\payment\helpers;
 
 use yii\base\InvalidParamException;
 
@@ -13,7 +13,7 @@ use yii\base\InvalidParamException;
  * Class InstallHelper
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\helpers
+ * @package dlds\payment\helpers
  */
 class InstallHelper
 {

@@ -6,18 +6,18 @@
  * @date 19.04.2012
  * @author Ivo Kund <ivo@opus.ee>
  */
-namespace opus\payment\services\payment;
+namespace dlds\payment\services\payment;
 
-use opus\payment\Exception;
-use opus\payment\helpers\PaymentHelper;
-use opus\payment\PaymentHandlerBase;
+use dlds\payment\Exception;
+use dlds\payment\helpers\PaymentHelper;
+use dlds\payment\PaymentHandlerBase;
 use yii\base\Object;
 
 /**
  * Class Transaction
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment\services\payment
+ * @package dlds\payment\services\payment
  *
  * @method string getSum($default = null)
  * @method string getComment($default = null)
@@ -103,7 +103,7 @@ class Transaction extends Object
      * Set the transaction ID
      *
      * @param int $transactionId
-     * @throws \opus\payment\Exception If transaction ID is not numeric
+     * @throws \dlds\payment\Exception If transaction ID is not numeric
      * @return Transaction
      */
     public function setTransactionId($transactionId)

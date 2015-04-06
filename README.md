@@ -24,7 +24,7 @@ Overwrite `PaymentHandlerBase` class and at least the method `getConfiguration`.
 with your account details and locations of key and certificate files. You can just copy the files from under `examples/config`.
 
 ```php
-class MyPaymentHandler extends \opus\payment\PaymentHandlerBase
+class MyPaymentHandler extends \dlds\payment\PaymentHandlerBase
 {
 
     /**
@@ -53,13 +53,13 @@ $service = MyPaymentHandler::createPaymentService();
 $transaction = $service->createTransaction(1234, 234, ['comment' => 'Comment']);
 
 // render the widget
-echo \opus\payment\widgets\PaymentWidget::widget([
+echo \dlds\payment\widgets\PaymentWidget::widget([
     'forms' => $service->generateForms($transaction),
 ]);
 
 ```
 #### Customize the payment form
-The default implementation uses the widget `opus\payment\widgets\PaymentWidget`. You can override and use this to use custom forms or elements. 
+The default implementation uses the widget `dlds\payment\widgets\PaymentWidget`. You can override and use this to use custom forms or elements. 
 ```php
 class MyPaymentWidget extends PaymentWidget
 {

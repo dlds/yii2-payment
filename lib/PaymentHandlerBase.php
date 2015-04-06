@@ -22,11 +22,11 @@
  * @author Ivo Kund <ivo@opus.ee>
  */
 
-namespace opus\payment;
+namespace dlds\payment;
 
-use opus\payment\adapters\AbstractAdapter;
-use opus\payment\services\Payment;
-use opus\payment\services\payment\Form;
+use dlds\payment\adapters\AbstractAdapter;
+use dlds\payment\services\Payment;
+use dlds\payment\services\payment\Form;
 use yii\base\Component;
 use yii\base\Object;
 use yii\helpers\ArrayHelper;
@@ -36,7 +36,7 @@ use yii\web\Application;
  * Class PaymentHandlerBase
  *
  * @author Ivo Kund <ivo@opus.ee>
- * @package opus\payment
+ * @package dlds\payment
  */
 abstract class PaymentHandlerBase extends Object
 {
