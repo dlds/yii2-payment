@@ -2,7 +2,6 @@
   "name": "dlds/yii2-payment",
   "type": "yii2-extension",
   "description": "Library to handle payments with Estonian banks",
-  "minimum-stability": "dev",
   "license": "proprietary",
   "authors": [
     {
